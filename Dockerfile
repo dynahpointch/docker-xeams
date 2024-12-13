@@ -20,5 +20,8 @@ RUN	wget https://www.xeams.com/files/XeamsLinux64.tar && \
 COPY	docker-install.sh .
 COPY	docker-run.sh .
 
+RUN 	chmod +x /opt/docker-install.sh
+RUN 	chmod +x /opt/docker-run.sh
+
 CMD	./docker-run.sh
 
